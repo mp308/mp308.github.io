@@ -85,8 +85,8 @@ export class WelcomBanner extends Component {
               /></span>
             </div>
           </div>
-          <div className="text-sm sm:text-base md:text-lg text-gray-200 max-w-2xl mx-auto px-4">
-            I am seeking a UX/UI Design and FrontEnd Intern position to apply my skills and knowledge in a real-world setting.
+          <div className="text-sm sm:text-base md:text-lg text-gray-200 max-w-2xl mx-auto px-4 font-kumbh font-regular">
+            I am seeking a Programmer , UX/UI Design or Graphic Desing position to apply my skills and knowledge in a real-world setting.
           </div>
         </div>
         <div className="mt-48 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-yellow-50 animate-bounce">

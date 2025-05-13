@@ -13,8 +13,7 @@ import { VscVscode } from "react-icons/vsc";
 import fifa from '../assets/images/fifa.png' // pic
 
 
-const HERO_CONTENT = `I am seeking an opportunity to work as a UX/UI Design and FrontEnd Intern to apply my skills and knowledge in a real-world setting. I have a passion for front-end development and believe my abilities in designing and developing websites can create exceptional and engaging user experiences.
-Thank you, `
+const HERO_CONTENT = `I am a recent graduate from Kasetsart University, Kamphaeng Saen Campus, in Information Technology from the Faculty of Liberal Arts and Science. I have experience in coding, front-end and back-end development, database management, data analysis, and mobile application development. I am deeply passionate about coding in all programming languages and committed to learning new skills to enhance my expertise and align with organizational goals, `
 
 const Contact = () => {
 
@@ -67,7 +66,7 @@ const Contact = () => {
 
         <div className='flex flex-wrap'>
           <div className='w-full lg:w-1/2'>
-            <div className='flex flex-col items-center lg:items-start'>
+            <div className='flex flex-col items-center lg:items-start mb-10'>
             <div className='pb-16'>
             <h1 id='name-text-hero' className='hover-effect text-6xl  font-bebas tracking-tight lg:mt-16 hover:bg-white rounded-xl hover:text-black transition duration-300 ease-in-out hover:p-2' data-value="Sanpitch Phuvapaisankit">
                 Sanpitch Phuvapaisankit
@@ -77,15 +76,15 @@ const Contact = () => {
                     Front End Developer
                   </span> old font */ }
               <span className='gradient-text text-5xl font-thin text-transparent animate-gradient tracking-tight '>
-                Front End Developer
+                Full Stack Developer Intern
               </span>
-              <p className='my-2 max-w-xl py-6 font-light tracking-tighter'>{HERO_CONTENT} <span> <ReactTypingEffect
+              <p className='my-2  py-6 font-light font-kumbh'>{HERO_CONTENT} <span> <ReactTypingEffect
                 text={["Welcome to my Portfolio", "I Love Dev", 'FrontEnd']}
               // className="mt-5 text-center text-3xl font-title"
               /></span> </p>
 
 
-              <h1 className='pt-8 text-5xl font-bebas '>My Contact</h1>
+              <h1 className='pt-8 text-5xl font-bebas'>Follow Us</h1>
               <div className='py-8  flex flex-row gap-4 ' style={{ fontSize: '50px' }}>
                 <a href="https://github.com/mp308" className=' hover:text-gray-600 transition delay-150 duration-300 ease-in-out'><FaGithub /></a>
                 <a href="https://www.instagram.com/mooyoungbongkancha/?hl=en" className='hover:text-gray-600 transition delay-150 duration-300 ease-in-out'><FaSquareInstagram /></a>
@@ -93,10 +92,10 @@ const Contact = () => {
                 <a href="https://line.me/ti/p/fifa.rock123" className='hover:text-gray-600 transition delay-150 duration-300 ease-in-out'><FaLine /></a>
                 <a href="https://www.youtube.com/channel/UC3RbjgmcO_N-HTSRU2cP8Uw" className='hover:text-gray-600 transition delay-150 duration-300 ease-in-out'><FaYoutube /></a>
               </div>
-              <div className='font-title font-thin pb-20 text-3xl lg:text-left sm:text-center hover:text-gray-600 transition delay-150 duration-300 ease-in-out'>
+              {/* <div className='font-title font-thin pb-20 text-3xl lg:text-left sm:text-center hover:text-gray-600 transition delay-150 duration-300 ease-in-out'>
                 <p>TEL : 0945541469</p>
                 <p>EMAIL : spphoto308@gmail.com</p>
-              </div>
+              </div> */}
             </div>
           </div>
 

@@ -15,6 +15,8 @@ import Content from '../components/Myworkcontent';
 import FooterBanner from '../components/FooterBanner';
 import WelcomBanner from '../components/WelcomBanner';
 import Certi from '../components/Certi';
+import  Bannerproject  from '../components/Bannerproject';
+import CoBannerskill from '../components/Cobannerskill';
 
 
 
@@ -39,11 +41,11 @@ const Homepage = () => {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       const t1 = gsap.timeline();
-      t1.from(["#title-1", "#title-2", "#title-3"], {
+      t1.from(["#title-1", "#title-2", "#title-3", "#title-4"], {
         opacity: 0,
         y: "+=30",
         stagger: 0.5,
-      }).to(["#title-1", "#title-2", "#title-3"], {
+      }).to(["#title-1", "#title-2", "#title-3" , "#title-4"], {
         opacity: 0,
         y: "-=30",
         delay: 0.5,
@@ -70,18 +72,20 @@ const Homepage = () => {
           <h1 id='title-2'
             className='text-4xl md:text-6xl lg:text-9xl '>PHUVAPAISANKIT</h1>
           <h1 id='title-3'
-            className='text-4xl md:text-6xl lg:text-9xl '>Graphics & Webdev</h1>
+            className='text-4xl md:text-6xl lg:text-9xl '>UX / UI Desing</h1>
+          <h1 id='title-4'
+            className='text-4xl md:text-6xl lg:text-9xl '>Graphics & Fullstack Developer</h1>
         </div>
       </div>
       <div id='welcome ' className="bg-[#1b1b1b] text-white" >
         <Header />
         <WelcomBanner/>
-        <Banner />
         <Contact />
-        <Skill />
-        <FooterBanner/>
-         <Certi/>
+        <Bannerproject />
+        <CoBannerskill />
+        <FooterBanner />
         <Footer />
+      
       </div>
     </>
   );

@@ -12,6 +12,7 @@ function Header() {
     };
 
     return (
+        <>
         <nav className="bg-black p-6 text-white">
             <div className="flex justify-between items-center">
                 <Link to="/">
@@ -51,6 +52,8 @@ function Header() {
                 <Link to="/Myteam" className="font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Teamate</Link>
             </div>
         </nav>
+         <div className="bg-[#18A289] w-full h-2"></div>
+        </>
     );
 }
 

@@ -13,6 +13,9 @@ export default {
         noto: ['Noto Sans Thai Looped', 'sans-serif'],
         embed: ['Permanent Marker', 'sans-serif'],
         prompt: ['Prompt', 'sans-serif'],
+        kumbh: ['"Kumbh Sans"', 'sans-serif'],
+        league: ['"League Script"', 'cursive'],
+        lacquer: ['Lacquer', 'sans-serif'],
       },
       animation: {
         gradient: "gradient 6s linear infinite",

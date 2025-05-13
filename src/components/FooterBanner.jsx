@@ -1,32 +1,67 @@
-import React from 'react';
+import React from "react";
 
 function FooterBanner() {
   return (
-    <div className="py-24 sm:py-32 font-title">
-      <h1 className="font-bold text-white text-4xl sm:text-6xl text-center pb-14">ระดับการศึกษา</h1>
+    <section className="w-full font-title mb-10">
+      {/* ===== Heading ===== */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <dl className="grid grid-cols-1 gap-y-16 sm:grid-cols-2 lg:grid-cols-2 lg:gap-x-8 text-center">
-          <div className="flex flex-col gap-y-4 items-center">
-            <dt className="text-base leading-7 text-white">BANGKOK CHRISTIAN COLLEGE</dt>
-            <dd className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              มัธยม
-            </dd>
-            <gp>
-              gpax =2.98
-            </gp>
-          </div>
-          <div className="flex flex-col gap-y-4 items-center">
-            <dt className="text-base leading-7 text-white">FACULTY OF LIBERAL ARTS & SCIENCE KASETSART UNIVERSITY</dt>
-            <dd className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              ปริญญาตรี
-            </dd>
-            <gp>
-              gpax =3.57
-            </gp>
-          </div>
-        </dl>
+        <h2 className="text-white text-5xl sm:text-6xl font-bebas tracking-wider uppercase text-left">
+          Education
+        </h2>
       </div>
-    </div>
+
+      {/* ===== Timeline ===== */}
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-14 space-y-16">
+        {/* --- Row 1 --- */}
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+          {/* Left block */}
+          <div className="sm:max-w-lg">
+            <h3 className="text-white text-lg sm:text-xl font-semibold uppercase tracking-wide">
+              Bangkok Christian College
+            </h3>
+            <p className="text-white mt-1">
+              GPAX&nbsp;:&nbsp;<span className="font-semibold">2.98</span>
+            </p>
+            <a
+              href="#"
+              className="mt-2 inline-block text-sm underline text-white hover:text-amber-400 transition"
+            >
+              Download&nbsp;Transcript
+            </a>
+          </div>
+
+          {/* Right year */}
+          <span className="text-white text-base sm:text-lg font-semibold whitespace-nowrap">
+            2009&nbsp;–&nbsp;2015
+          </span>
+        </div>
+
+        {/* --- Row 2 --- */}
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+          <div className="sm:max-w-lg">
+            <h3 className="text-white text-lg sm:text-xl font-semibold uppercase tracking-wide">
+              Faculty of Liberal Arts &amp; Science&nbsp;— IT
+            </h3>
+            <p className="text-white">
+              Kasetsart University&nbsp;• Kamphaeng&nbsp;Saen Campus
+            </p>
+            <p className="text-white mt-1">
+              GPAX&nbsp;:&nbsp;<span className="font-semibold">3.57</span>
+            </p>
+            <a
+              href="#"
+              className="mt-2 inline-block text-sm underline text-white hover:text-amber-400 transition"
+            >
+              Download&nbsp;Transcript
+            </a>
+          </div>
+
+          <span className="text-white text-base sm:text-lg font-semibold whitespace-nowrap">
+            2021&nbsp;–&nbsp;Present
+          </span>
+        </div>
+      </div>
+    </section>
   );
 }
 
