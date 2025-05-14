@@ -33,7 +33,7 @@ function Header() {
                     <div className="hidden md:flex space-x-6 text-3xl">
                         <Link to="/" className="font-lacquer hover:text-yellow-500 transition delay-150 duration-300 ease-in-out">Home</Link>
                         <Link to="/MyArtWork" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">MyArtWork</Link>
-                        <Link to="/Myworkpage" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">MyWork</Link>
+                        <Link to="/Myworkpage" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Experince</Link>
                         <Link to="/Certifi" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Certificate</Link>
                         <Link to="/Myteam" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Teamate</Link>
                     </div>
@@ -48,7 +48,7 @@ function Header() {
             >
                 <Link to="/" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Home</Link>
                 <Link to="/MyArtWork" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">MyArtWork</Link>
-                <Link to="/Myworkpage" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">MyWork</Link>
+                <Link to="/Myworkpage" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Experince</Link>
                 <Link to="/Certifi" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Certificate</Link>
                 <Link to="/Myteam" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Teamate</Link>
             </div>

@@ -5,7 +5,7 @@ function FooterBanner() {
     <section className="w-full font-title mb-10">
       {/* ===== Heading ===== */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-white text-5xl sm:text-6xl font-bebas tracking-wider uppercase text-left">
+        <h2 className="text-white text-5xl sm:text-6xl font-bebas tracking-wider uppercase text-left underline">
           Education
         </h2>
       </div>

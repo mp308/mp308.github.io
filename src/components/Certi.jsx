@@ -64,7 +64,7 @@ export class Certi extends Component {
                 alt={`Certificate ${index + 1}`} 
                 className="w-full rounded-lg shadow-lg"
               />
-              <p className="text-center text-white mt-4 font-mitr text-sm sm:text-sm lg:text-sm">
+              <p className="text-center text-white mt-4 font-mitr">
                 {certificate.description}
               </p>
             </div>

@@ -11,7 +11,7 @@ export class EV_YearBook extends Component {
   render() {
     return (
       <>
-        <div className="p-5 text-center">
+        <div className="p-4 lg:p-20 text-center">
           <h1 className="text-7xl mt-9 mb-5 text-white font-bebas">- Years Book Bcc 168 -</h1>
           <p className="text-2xl text-white font-kumbh font-thin mb-5">
             This is a football league that I have been involved in for 3 years. I have been responsible for

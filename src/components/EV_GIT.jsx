@@ -34,12 +34,16 @@ import Gamedev from '../assets/images/HardSkills/Gamedev.jpg';
 
 import mala from '../assets/images/HardSkills/mala.jpg';
 
+import Banner from '../assets/images/content1.jpg';
+
 
 
 
 const projects = [
   {
     title: 'Fullstack Developer Intern - Cooperative Education Program',
+    Indicate: 'I',
+    category: '- Internship',
     modaldesc: 'SoftSquare International Co., Ltd. Customer Relationship Management Developed the front-end of an enterprise-grade Customer Relationship Management System with React.js, enabling secure, high-volume internal data dispatch. Deployed UAT builds through an automated CI/CD pipeline, delivering optimized artifacts to AWS Cloud Human Resources Management System Developed an enterprise-scale HRMS with Angular (frontend) and C# .NET (backend), securely supporting of employees and delivering key modules for Training  Development, Organization Structure management, and Personnel Movement. Integrated SonarQube in the CI pipeline to enforce coding standards and proactively detect bugs & code smells before deployment.',
     desc: 'SoftSquare International Co., Ltd. External Project : Customer Relationship Management (CRM) Web Application . Develop the frontend interface using React.js Internal Project : Human Resources Management System (HRMS) Web Application . Developed a full-stack web application with Angular for the frontend and C# .NET for the backend.',
     thumb: sq01,
@@ -48,6 +52,8 @@ const projects = [
   },
   {
     title: 'Fixmax Performance Web Application',
+    Indicate: 'P',
+    category: '- Project',
     modaldesc: 'I designed comprehensive system workflows, end-to-end UX/UI prototypes, and a relational database schema to map every entity and process flow before development. Building on this foundation, I delivered a capstone full-stack e-commerce web application React on the front end, Node.js on the back end, and Prisma ORM for type-safe data access featuring secure authentication, a password-reset workflow,a configurable product-discount module, real-time inventory management, an administrative dashboard, and PromptPay QR-code payment integration.',
     desc: 'Developed an full-stack e-commerce app for dietary supplements featuring real-time product CRUD, coupon discounts, authentication membership, and an admin dashboard built with React and Node.js.',
     thumb: FIXMAX,
@@ -56,6 +62,8 @@ const projects = [
   },
   {
     title: 'Smart-Home Prototype',
+    Indicate: 'P',
+    category: '- Project',
     modaldesc: 'Built an ESP32-based smart-home prototype that streams temperature, humidity, intrusion, and flame data via MQTT (NetPie) to Node-RED, where it is visualised, logged to MySQL, and triggers LINE alerts with relay/buzzer actuation added intuitive user interfaces a Vue.js web app for desktop control and a cross-platform Flutter mobile app for on-the-go access demonstrating that low-cost hardware and open-source tools can deliver a secure, responsive, and extensible smart-home solution.',
     desc: 'Built an ESP32-based smart-home prototype that streams temperature, humidity, intrusion, and flame data via MQTT (NetPie) to Node-RED, where it is visualised, logged to MySQL, and triggers LINE alerts with relay/buzzer actuation added intuitive user interfaces a Vue.js web app for desktop control and a cross-platform Flutter mobile app for on-the-go access demonstrating that low-cost hardware and open-source tools can deliver a secure, responsive, and extensible smart-home solution.',
     thumb: iot1,
@@ -64,6 +72,8 @@ const projects = [
   },
   {
     title: 'ShabuMala Application',
+    Indicate: 'P',
+    category: '- Project',
     modaldesc: 'Developed FoodApps “ShabuMala,” a cross-platform mobile e-commerce application for restaurants built with Flutter and Firebase. The app offers real-time inventory control, secure user registration, seamless customer ordering, table-reservation functionality, an in-app rating & feedback module, and an admin back office that lets staff adjust stock levels and pricing with ease.',
     desc: 'Developed FoodApps a mobile e-commerce platform for restaurants that offers inventory control, customer ordering, user registration, an admin back office, and in-app feedback built with Flutter and Firebase.',
     thumb: mala,
@@ -72,6 +82,8 @@ const projects = [
   },
   {
     title: 'Truck Transport',
+    Indicate: 'P',
+    category: '- Project',
     modaldesc: 'Developed a full-stack transport e-commerce web application using HTML, CSS, and C# .NET, delivering complete CRUD functionality. The system records every transport job and presents them on an interactive dashboard',
     desc: 'Devloped an full-stack e-commerce app for Transport fully functional CRUD web application using HTML + CSS + .NET C#',
     thumb: logotk,
@@ -80,6 +92,8 @@ const projects = [
   },
   {
     title: 'Visualization Pokémon Dataset ( OpenHouse Project )',
+    Indicate: 'P',
+    category: '- Project',
     modaldesc: 'Data Visualization Pokémon Dataset 800 Records Utilized Looker Studio to create interactive dashboards and perform visual analysis on Pokémon data. Identified key insights ',
     desc: 'Data Visualization Pokémon Dataset 800 Records Utilized Looker Studio to create interactive dashboards and perform visual analysis on Pokémon data. Identified key insights ',
     thumb: pokemon,
@@ -88,6 +102,8 @@ const projects = [
   },
   {
     title: 'Cleaning and Analysis Google Play Store Apps 2021 Dataset ( OpenHouse Project )',
+    Indicate: 'P',
+    category: '- Project',
     modaldesc: 'Data Cleaning and Analysis Google Play Store Apps (2021 Dataset) Performed data cleaning and exploratory analysis on a large-scale dataset with over 2.3 million records using Python (PySpark). Uncovered key insights into app categories',
     desc: 'Data Cleaning and Analysis Google Play Store Apps (2021 Dataset) Performed data cleaning and exploratory analysis on a large-scale dataset with over 2.3 million records using Python (PySpark). Uncovered key insights into app categories',
     thumb: data01,
@@ -96,6 +112,8 @@ const projects = [
   },
   {
     title: 'Recycle Boy Game',
+    Indicate: 'P',
+    category: '- Project',
     modaldesc: 'Recycle Boy was developed using Unity, with C# as the programming language to build core game mechanics such as the quest system, character movement, enemy AI, and collision detection.',
     desc: 'Recycle Boy was developed using Unity, with C# as the programming language to build core game mechanics such as the quest system, character movement, enemy AI, and collision detection.',
     thumb: Gamedev,
@@ -137,31 +155,36 @@ export class EV_GIT extends Component {
 
     return (
       <>
-        <div className="py-20  ">
-          {user && (
-            <div className="text-center mb-10">
-              <img
-                src={user.avatar_url}
-                alt="GitHub profile"
-                className="rounded-full w-ภ0 h-20 mx-auto mb-4 border-4 border-white"
-              />
-              <h1 className="text-3xl md:text-5xl  text-white font-bebas">{user.name}</h1>
-              <p className="text-white mt-2 text-sm md:text-base">{user.bio}</p>
-            </div>
-          )}
-
-          <h1 className="text-3xl md:text-4xl text-center my-8 text-white font-bebas">- My Experience -</h1>
-          <div className="flex flex-col items-center justify-center text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-yellow-50 animate-bounce  ">
-            <RxDoubleArrowDown />
-          </div>
-          <div className="px-9 sm: py-9 space-y-10 relative">
-            <div className="bg-[#18A289] w-full h-1 rounded-sm"></div>
-            {/* สายปาดขีดโค้ง (ตกแต่งพื้นหลัง) */}
+        <div className="pb-20 ">
+          <div className="relative">
             <img
-              src="/src/assets/images/decoration/swoosh.svg"
+              src={Banner}
               alt=""
-              className="pointer-events-none select-none absolute -top-10 sm:-top-14 left-1/4 w-[260px] sm:w-[380px] opacity-40"
+              className="absolute inset-0 w-full h-full object-cover opacity-20"
             />
+            <div className="relative z-10 py-4">
+              {user && (
+                <div className="text-center mb-10">
+                  <img
+                    src={user.avatar_url}
+                    alt="GitHub profile"
+                    className="rounded-full w-ภ0 h-20 mx-auto mb-4 border-4 border-white"
+                  />
+                  <h1 className="text-3xl md:text-5xl  text-white font-bebas">{user.name}</h1>
+                  <p className="text-white mt-2 text-sm md:text-base">{user.bio}</p>
+                </div>
+              )}
+
+              <h1 className="text-3xl md:text-4xl text-center my-8 text-white font-bebas">- My Experience -</h1>
+              <div className="flex flex-col items-center justify-center text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-yellow-50 animate-bounce  ">
+                <RxDoubleArrowDown />
+              </div>
+            </div>
+          </div>
+          <div className=" sm: py-9 space-y-10 relative" style={{ paddingLeft: '15%', paddingRight: '15%' }}>
+
+
+
 
             {projects.map((p, idx) => (
               <div
@@ -177,10 +200,18 @@ export class EV_GIT extends Component {
 
                 {/* text */}
                 <div className="flex-1">
-                  <h3 className="text-lg sm:text-4xl font-bebas tracking-wide text-white group-hover:text-emerald-700 transition">
+                  <div className='flex flex-row gap-2'>
+                    <h3 className="text-lg sm:text-2xl font-prompt font-bold tracking-wide text-white group-hover:text-emerald-700 transition bg-emerald-600 text-center inline-block w-fit px-3 mb-3 ">
+                      {p.Indicate}
+                    </h3>
+                    <h3 className="text-lg sm:text-3xl font-bebas tracking-wide text-white group-hover:text-emerald-700 transition">
+                      {p.category}
+                    </h3>
+                  </div>
+                  <h3 className="text-lg sm:text-2xl font-bebas tracking-wide text-white group-hover:text-emerald-700 transition">
                     {p.title}
                   </h3>
-                  <p className="mt-1 text-xs sm:text-sm text-white group-hover:text-emerald-400 font-mitr line-clamp-3">
+                  <p className="mt-1 text-xs sm:text-sm text-white group-hover:text-emerald-400 font-kumbh line-clamp-3">
                     {p.desc}
                   </p>
 
@@ -194,7 +225,7 @@ export class EV_GIT extends Component {
                 </div>
               </div>
             ))}
-            <div className="bg-[#18A289] w-full h-1 rounded-sm"></div>
+
           </div>
 
         </div>
