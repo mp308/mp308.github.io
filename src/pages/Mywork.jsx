@@ -12,7 +12,6 @@ class Mywork extends Component {
       <>
         <Header />
         <div className='bg-[#1a1a1a]'>
-          <WelcomBanner/>
         <EV_GIT/>
         </div>
         <Footer />

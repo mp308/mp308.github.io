@@ -1,5 +1,10 @@
 import React from 'react';
 import walk from "../assets/images/Banner/People_Drinking_Whey_Protein.jpg"
+import worktable from '../assets/images/worktable.jpg';
+import bike from '../assets/images/bike.jpg';
+import mypic12 from '../assets/images/mypic12.jpg';
+
+
 
 import { FaGithub, FaPython, FaReact, FaHtml5, FaCss3Alt, FaJava, FaNodeJs, FaDocker, FaAws, FaBootstrap, FaAngular } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -14,17 +19,17 @@ function CoBannerskill() {
         <>
             <div className="flex flex-col md:flex-row items-center  p-6 md:p-12 rounded-lg  max-w-4xl mx-auto">
                 {/* Left Image Section */}
-                <div className="w-full md:w-1/2">
+                <div className="w-full md:w-1/2 ">
                     <img
-                        src={walk} // Replace with your image path
+                        src={mypic12} // Replace with your image path
                         alt="Fitness and Health Products"
-                        className="rounded-lg w-full h-auto"
+                        className="rounded-lg sm:w-[400px] h-[400px]  object-cover "
                     />
                 </div>
 
                 {/* Right Text Section */}
                 <div className="w-full md:w-1/2 mt-6 md:mt-0 md:ml-6">
-                    <h2 className="text-red-600 font-bold text-xl mb-4 font-prompt">My Programing Skills</h2>
+                    <h2 className="text-white font-medium text-4xl mb-4 font-bebas bg-red-600 hover:bg-white hover:text-red-600 px-3 py-2 transition delay-150">My Programing Skills</h2>
                     <ul className="space-y-3 text-white">
                         <li className="flex items-start font-prompt">
                             <span className="text-red-600 font-bold mr-2">—</span> HTML, CSS , Java Script, Type Script , Java, C# , Python, Dart  , SQL , PL SQL

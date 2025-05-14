@@ -12,17 +12,25 @@ export class EV_YearBook extends Component {
     return (
       <>
         <div className="p-5 text-center">
-          <h1 className="text-3xl  mb-5 text-white font-mitr">ภาพโปรโมทสื่อสิ่งพิมพ์งาน หนังสื่อรุ่น</h1>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            <img src={F_pic1} alt="YearBook 1" className="rounded-lg shadow-md" />
-            <img src={F_pic2} alt="YearBook 2" className="rounded-lg shadow-md" />
-            <img src={F_pic3} alt="YearBook 3" className="rounded-lg shadow-md" />
-            <img src={F_pic4} alt="YearBook 4" className="rounded-lg shadow-md" />
-            <img src={F_pic5} alt="YearBook 5" className="rounded-lg shadow-md" />
-            <img src={F_pic6} alt="YearBook 6" className="rounded-lg shadow-md" />
-          </div>
-          <div className="mt-5">
-            <img src={F_picBanner1} alt="Banner" className="rounded-lg shadow-md" />
+          <h1 className="text-7xl mt-9 mb-5 text-white font-bebas">- Years Book Bcc 168 -</h1>
+          <p className="text-2xl text-white font-kumbh font-thin mb-5">
+            This is a football league that I have been involved in for 3 years. I have been responsible for
+            creating posters and banners for the event. The league is held every year and attracts a large
+            number of participants. I have learned a lot from this experience, including how to work with
+            different teams and how to manage my time effectively.
+            </p>
+          <div className='p-8'>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-3 ">
+              <img src={F_pic1} alt="YearBook 1" className="rounded-lg shadow-md" />
+              <img src={F_pic2} alt="YearBook 2" className="rounded-lg shadow-md" />
+              <img src={F_pic3} alt="YearBook 3" className="rounded-lg shadow-md" />
+              <img src={F_pic4} alt="YearBook 4" className="rounded-lg shadow-md" />
+              <img src={F_pic5} alt="YearBook 5" className="rounded-lg shadow-md" />
+              <img src={F_pic6} alt="YearBook 6" className="rounded-lg shadow-md" />
+            </div>
+            <div className="mt-5 ">
+              <img src={F_picBanner1} alt="Banner" className="rounded-lg shadow-md" />
+            </div>
           </div>
         </div>
       </>

@@ -13,7 +13,8 @@ function Header() {
 
     return (
         <>
-        <nav className="bg-black p-6 text-white">
+        
+        <nav className="bg-[#141414] p-6 text-[#E6E6E6]">
             <div className="flex justify-between items-center">
                 <Link to="/">
                     <img className="h-20 w-auto flex" src={logo} alt="CEO" />
@@ -30,11 +31,11 @@ function Header() {
                     </div>
 
                     <div className="hidden md:flex space-x-6 text-3xl">
-                        <Link to="/" className="font-bebas hover:text-yellow-500 transition delay-150 duration-300 ease-in-out">Home</Link>
-                        <Link to="/MyArtWork" className="font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">MyArtWork</Link>
-                        <Link to="/Myworkpage" className="font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">MyWork</Link>
-                        <Link to="/Certifi" className="font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Certificate</Link>
-                        <Link to="/Myteam" className="font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Teamate</Link>
+                        <Link to="/" className="font-lacquer hover:text-yellow-500 transition delay-150 duration-300 ease-in-out">Home</Link>
+                        <Link to="/MyArtWork" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">MyArtWork</Link>
+                        <Link to="/Myworkpage" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">MyWork</Link>
+                        <Link to="/Certifi" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Certificate</Link>
+                        <Link to="/Myteam" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Teamate</Link>
                     </div>
                 </div>
             </div>
@@ -45,14 +46,14 @@ function Header() {
                     isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
                 }`}
             >
-                <Link to="/" className="font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Home</Link>
-                <Link to="/MyArtWork" className="font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">MyArtWork</Link>
-                <Link to="/Myworkpage" className="font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">MyWork</Link>
-                <Link to="/Certifi" className="font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Certificate</Link>
-                <Link to="/Myteam" className="font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Teamate</Link>
+                <Link to="/" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Home</Link>
+                <Link to="/MyArtWork" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">MyArtWork</Link>
+                <Link to="/Myworkpage" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">MyWork</Link>
+                <Link to="/Certifi" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Certificate</Link>
+                <Link to="/Myteam" className="font-lacquer hover:text-yellow-500 transition delay-50 duration-300 ease-in-out">Teamate</Link>
             </div>
         </nav>
-         <div className="bg-[#18A289] w-full h-2"></div>
+         <div className="bg-[#161616] w-full h-1"></div>
         </>
     );
 }

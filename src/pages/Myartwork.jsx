@@ -16,8 +16,10 @@ class Myartwork extends Component {
       <>
         <Header />
         <div className='bg-[#1a1a1a]'>
-          <WelcomBanner/>
-          <SoftSkill/>
+
+          <div >
+            <h1 className='text-white text-center font-bebas text-5xl px-8 pt-20'>My Port / <span>Artwork</span> </h1>
+            </div> 
         <EV_Football/>
         <EV_YearBook/>
         <EV_anniversary/>

@@ -56,7 +56,7 @@ export class Certi extends Component {
         <div className='font-bold text-white text-4xl sm:text-6xl text-center pb-14'>
           Certificate
         </div>
-        <div className="flex flex-col items-center gap-12 pb-8">
+        <div className="  items-center gap-12 pb-8 grid grid-cols-2 sm:grid-cols-2 sm:grid sm:gap-8 sm:justify-items-center sm:px-10 lg:grid-cols-3 lg:gap-8 lg:px-20">  
           {certificates.map((certificate, index) => (
             <div key={index} className="max-w-lg">
               <img 
@@ -64,7 +64,7 @@ export class Certi extends Component {
                 alt={`Certificate ${index + 1}`} 
                 className="w-full rounded-lg shadow-lg"
               />
-              <p className="text-center text-white mt-4 font-mitr">
+              <p className="text-center text-white mt-4 font-mitr text-sm sm:text-sm lg:text-sm">
                 {certificate.description}
               </p>
             </div>

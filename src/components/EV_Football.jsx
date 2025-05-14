@@ -17,8 +17,15 @@ export class EV_Football extends Component {
     return (
       <>
         <div className="p-5 text-center">
-          <h1 className="text-3xl  mb-5 text-white font-mitr">ภาพโปรโมทสื่อสิ่งพิมพ์งาน Football</h1>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          <h1 className="text-7xl mt-9 mb-5 text-white font-bebas">- Bcc Sports ChongCo League -</h1>
+          <p className="text-2xl text-white font-kumbh font-thin mb-5">
+             This is a football league that I have been involved in for 3 years. I have been responsible for
+            creating posters and banners for the event. The league is held every year and attracts a large
+            number of participants. I have learned a lot from this experience, including how to work with
+            different teams and how to manage my time effectively.
+            </p>
+            <div className='p-9'>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-5">
             <img src={F_pic1} alt="Football 1" className="rounded-lg shadow-md" />
             <img src={F_pic2} alt="Football 2" className="rounded-lg shadow-md" />
             <img src={F_pic3} alt="Football 3" className="rounded-lg shadow-md" />
@@ -30,9 +37,10 @@ export class EV_Football extends Component {
             <img src={F_pic9} alt="Football 9" className="rounded-lg shadow-md" />
             <img src={F_pic10} alt="Football 10" className="rounded-lg shadow-md" />
           </div>
-          <div className="mt-5">
+          <div className="mt-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-2">
             <img src={F_picBanner1} alt="Banner 1" className="rounded-lg shadow-md mb-4" />
             <img src={F_picBanner2} alt="Banner 2" className="rounded-lg shadow-md" />
+          </div>
           </div>
         </div>
       </>
