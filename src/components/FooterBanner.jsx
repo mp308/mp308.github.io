@@ -32,7 +32,7 @@ function FooterBanner() {
 
           {/* Right year */}
           <span className="text-white text-base sm:text-lg font-semibold whitespace-nowrap">
-            2009&nbsp;–&nbsp;2015
+            2009&nbsp;–&nbsp;2021
           </span>
         </div>
 
@@ -46,7 +46,7 @@ function FooterBanner() {
               Kasetsart University&nbsp;• Kamphaeng&nbsp;Saen Campus
             </p>
             <p className="text-white mt-1">
-              GPAX&nbsp;:&nbsp;<span className="font-semibold">3.57</span>
+              GPAX&nbsp;:&nbsp;<span className="font-semibold">3.61 ( First Class Honour )</span>
             </p>
             <a
               href="#"
@@ -57,7 +57,7 @@ function FooterBanner() {
           </div>
 
           <span className="text-white text-base sm:text-lg font-semibold whitespace-nowrap">
-            2021&nbsp;–&nbsp;Present
+            2021&nbsp;–&nbsp;2025
           </span>
         </div>
       </div>
