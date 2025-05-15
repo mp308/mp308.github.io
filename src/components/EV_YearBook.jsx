@@ -13,11 +13,8 @@ export class EV_YearBook extends Component {
       <>
         <div className="p-4 lg:p-20 text-center">
           <h1 className="text-7xl mt-9 mb-5 text-white font-bebas">- Years Book Bcc 168 -</h1>
-          <p className="text-2xl text-white font-kumbh font-thin mb-5">
-            This is a football league that I have been involved in for 3 years. I have been responsible for
-            creating posters and banners for the event. The league is held every year and attracts a large
-            number of participants. I have learned a lot from this experience, including how to work with
-            different teams and how to manage my time effectively.
+          <p className="text-xl text-white font-kumbh font-thin mb-5">
+            When Bangkok Christian College entered its 168th year, the school’s administrators and students envisioned producing a commemorative Year Book that would weave together the institution’s rich history, pivotal moments, and enduring memories shared by “Christian” students across every generation. More than a simple keepsake, the book was intended to serve as a testament to—and storyteller of—the distinctive identity and fraternal values that have bound the Christian brotherhood for more than a century and a half.
             </p>
           <div className='p-8'>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-3 ">

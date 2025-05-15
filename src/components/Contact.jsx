@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactTypingEffect from 'react-typing-effect';
 import gsap from 'gsap';
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 
 import { motion, useAnimation } from 'framer-motion'
 //ส่วน obj/pic
@@ -30,62 +30,67 @@ const Contact = () => {
       let iteration = 0;
       const letters = "abcdefghijklmnopqrstuvwxyz";
       let interval = setInterval(() => {
-          event.target.innerText = event.target.innerText
-              .split("")
-              .map((letter, index) => {
-                  if(index < iteration) {
-                      return event.target.dataset.value[index];
-                  }
-                  return letters[Math.floor(Math.random() * 26)];
-              })
-              .join("");
+        event.target.innerText = event.target.innerText
+          .split("")
+          .map((letter, index) => {
+            if (index < iteration) {
+              return event.target.dataset.value[index];
+            }
+            return letters[Math.floor(Math.random() * 26)];
+          })
+          .join("");
 
-          if(iteration >= event.target.dataset.value.length){ 
-              clearInterval(interval);
-          }
+        if (iteration >= event.target.dataset.value.length) {
+          clearInterval(interval);
+        }
 
-          iteration += 1 / 3;
+        iteration += 1 / 3;
       }, 30);
-  };
+    };
 
-  const hoverElements = document.querySelectorAll(".hover-effect");
-  hoverElements.forEach(element => {
+    const hoverElements = document.querySelectorAll(".hover-effect");
+    hoverElements.forEach(element => {
       element.addEventListener("mouseover", handleMouseOver);
 
       return () => {
-          element.removeEventListener("mouseover", handleMouseOver);
+        element.removeEventListener("mouseover", handleMouseOver);
       };
-  });
+    });
   }, []);
 
-  
+
 
   return (
     <>
-      <div className='p-8 lg:md-35 text-white'>
+      <div className='p-8 lg:md-35 text-white '>
 
         <div className='flex flex-wrap'>
-          <div className='w-full lg:w-1/2'>
-            <div className='flex flex-col items-center lg:items-start mb-10'>
-            <div className='pb-16'>
-            <h1 id='name-text-hero' className='hover-effect text-6xl  font-bebas tracking-tight lg:mt-16 hover:bg-white rounded-xl hover:text-black transition duration-300 ease-in-out hover:p-2' data-value="Sanpitch Phuvapaisankit">
-                Sanpitch Phuvapaisankit
-              </h1>
+          <div className='w-full lg:w-1/2 '>
+            <div className='flex flex-col items-center lg:items-start' style={{ marginTop: '10vh' }}>
+              <div className='absolute opacity-30 ml-10 mt-10 lg:w-[500px] lg:h-[500px] w-[300px] h-[300px]'>
+                
+                <svg viewBox="0 0 64 64" fill="currentColor" xmlns="http://www.w3.org/2000/svg">  <path d="M1.91734 2.01577L25.1499 23.4512L50.0672 0.330973L26.947 25.2483L63.5456 63.644L25.1499 27.0455L0.232543 50.1656L23.3527 25.2483L1.91734 2.01577Z" fill="#FFBE62" stroke="#FFBE62"></path>  <path d="M1.91734 2.01577L25.1499 23.4512L50.0672 0.330973L26.947 25.2483L63.5456 63.644L25.1499 27.0455L0.232543 50.1656L23.3527 25.2483L1.91734 2.01577Z" fill="#FFBE62" stroke="#FFBE62"></path></svg>
+              </div>
+              <div className='pb-16 z-10'>
+
+                <h1 id='name-text-hero' className='hover-effect text-6xl  font-bebas tracking-tight lg:mt-16 hover:bg-white rounded-xl hover:text-black transition duration-300 ease-in-out hover:p-2' data-value="Sanpitch Phuvapaisankit">
+                  Sanpitch Phuvapaisankit
+                </h1>
               </div>
               {/* <span className='text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  text-5xl tracking-tight font-thin  '>
                     Front End Developer
                   </span> old font */ }
-              <span className='gradient-text text-5xl font-thin text-transparent animate-gradient tracking-tight '>
+              <span className='gradient-text text-5xl font-thin text-transparent animate-gradient tracking-tight z-20 '>
                 Full Stack Developer Intern
               </span>
-              <p className='my-2  py-6 font-light font-kumbh'>{HERO_CONTENT} <span> <ReactTypingEffect
+              <p className='my-2  py-6 font-light font-kumbh z-10'>{HERO_CONTENT} <span> <ReactTypingEffect
                 text={["Welcome to my Portfolio", "I Love Dev", 'FrontEnd']}
               // className="mt-5 text-center text-3xl font-title"
               /></span> </p>
 
 
               <h1 className='pt-8 text-5xl font-bebas'>Follow Us</h1>
-              <div className='py-8  flex flex-row gap-4 ' style={{ fontSize: '50px' }}>
+              <div className='pt-8  pb-12 flex flex-row gap-4 ' style={{ fontSize: '50px' }}>
                 <a href="https://github.com/mp308" className=' hover:text-gray-600 transition delay-150 duration-300 ease-in-out'><FaGithub /></a>
                 <a href="https://www.instagram.com/mooyoungbongkancha/?hl=en" className='hover:text-gray-600 transition delay-150 duration-300 ease-in-out'><FaSquareInstagram /></a>
                 <a href="https://www.facebook.com/fifa.rock.90/" className='hover:text-gray-600 transition delay-150 duration-300 ease-in-out'><FaFacebook /></a>
@@ -135,7 +140,9 @@ const Contact = () => {
 
           <div className='w-full lg:w-1/2 lg:p-8 relative flex justify-center items-center'>
             <div className='relative flex justify-center items-center'>
+              
               <div className='absolute inset-0 flex justify-center items-center'>
+                
                 <div className="absolute animate-rotate-circle" style={{ animationDelay: '1s' }}>
                   <FaGithub className="text-2xl lg:text-4xl text-blue-500" />
                 </div>
@@ -161,7 +168,8 @@ const Contact = () => {
                   <VscVscode className=" text-2xl lg:text-4xl text-yellow-500" />
                 </div>
               </div>
-              <div className="rounded-full w-48 h-48 lg:w-96 lg:h-96 bg-white absolute z-0"></div>
+              <div className="rounded-full w-48 h-48 lg:w-96 lg:h-96 bg-white absolute z-0">                
+              </div>
               <img src={fifa} alt="FIFA" className='relative z-10 rounded-full w-48 h-48 lg:w-96 lg:h-96 object-cover' />
             </div>
           </div>

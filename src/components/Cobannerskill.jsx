@@ -19,18 +19,20 @@ function CoBannerskill() {
         <>
             <div className="flex flex-col md:flex-row items-center  p-6 md:p-12 rounded-lg  max-w-4xl mx-auto">
                 {/* Left Image Section */}
+                
                 <div className="w-full md:w-1/2 ">
                     <img
                         src={mypic12} // Replace with your image path
                         alt="Fitness and Health Products"
                         className="rounded-lg sm:w-[400px] h-[400px]  object-cover "
-                    />
+                    />                  
                 </div>
 
                 {/* Right Text Section */}
                 <div className="w-full md:w-1/2 mt-6 md:mt-0 md:ml-6">
-                    <h2 className="text-white font-medium text-4xl mb-4 font-bebas bg-red-600 hover:bg-white hover:text-red-600 px-3 py-2 transition delay-150">My Programing Skills</h2>
-                    <ul className="space-y-3 text-white">
+                
+                    <h2 className="text-white font-medium text-4xl mb-4 font-bebas bg-red-600 hover:bg-white hover:text-red-600 px-3 py-2 transition delay-150 z-10">My Programing Skills</h2>
+                    <ul className="space-y-3 text-white z-10">
                         <li className="flex items-start font-prompt">
                             <span className="text-red-600 font-bold mr-2">—</span> HTML, CSS , Java Script, Type Script , Java, C# , Python, Dart  , SQL , PL SQL
                         </li>
@@ -47,6 +49,7 @@ function CoBannerskill() {
                             <span className="text-red-600 font-bold mr-2">—</span> AWS Clound , FireBase
                         </li>
                     </ul>
+                    
                 </div>
 
 

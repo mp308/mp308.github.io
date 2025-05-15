@@ -48,7 +48,7 @@ const projects = [
     desc: 'SoftSquare International Co., Ltd. External Project : Customer Relationship Management (CRM) Web Application . Develop the frontend interface using React.js Internal Project : Human Resources Management System (HRMS) Web Application . Developed a full-stack web application with Angular for the frontend and C# .NET for the backend.',
     thumb: sq01,
     images: [sq01, sq05, sq02],
-    link: 'https://mp308.github.io',
+    link: 'https://drive.google.com/file/d/1gkwU4b7RGl2MvhN17bHjg7STjs6ZV8pK/view?usp=sharing',
   },
   {
     title: 'Fixmax Performance Web Application',
@@ -78,7 +78,7 @@ const projects = [
     desc: 'Developed FoodApps a mobile e-commerce platform for restaurants that offers inventory control, customer ordering, user registration, an admin back office, and in-app feedback built with Flutter and Firebase.',
     thumb: mala,
     images: [mala],
-    link: 'https://github.com/mp308/Project_IOT_HotelsTest.git',
+    link: 'https://github.com/mp308/Project_Mobile_Dart-FoodApps.git',
   },
   {
     title: 'Truck Transport',
@@ -88,7 +88,7 @@ const projects = [
     desc: 'Devloped an full-stack e-commerce app for Transport fully functional CRUD web application using HTML + CSS + .NET C#',
     thumb: logotk,
     images: [logotk],
-    link: 'https://github.com/mp308/Project_IOT_HotelsTest.git',
+    link: 'https://github.com/mp308/Project_ALDB_API-CRUD.git',
   },
   {
     title: 'Visualization Pokémon Dataset ( OpenHouse Project )',
@@ -98,7 +98,7 @@ const projects = [
     desc: 'Data Visualization Pokémon Dataset 800 Records Utilized Looker Studio to create interactive dashboards and perform visual analysis on Pokémon data. Identified key insights ',
     thumb: pokemon,
     images: [pokemon, pokemon2, pokemon3],
-    link: 'https://github.com/mp308/Project_IOT_HotelsTest.git',
+    link: 'https://lookerstudio.google.com/reporting/2bca3bf2-7567-4482-9d04-dd3369029db7',
   },
   {
     title: 'Cleaning and Analysis Google Play Store Apps 2021 Dataset ( OpenHouse Project )',
@@ -108,7 +108,7 @@ const projects = [
     desc: 'Data Cleaning and Analysis Google Play Store Apps (2021 Dataset) Performed data cleaning and exploratory analysis on a large-scale dataset with over 2.3 million records using Python (PySpark). Uncovered key insights into app categories',
     thumb: data01,
     images: [data01, data02, data03],
-    link: 'https://github.com/mp308/Project_IOT_HotelsTest.git',
+    link: 'https://github.com/mp308/CleanData-Project.git',
   },
   {
     title: 'Recycle Boy Game',
@@ -118,7 +118,7 @@ const projects = [
     desc: 'Recycle Boy was developed using Unity, with C# as the programming language to build core game mechanics such as the quest system, character movement, enemy AI, and collision detection.',
     thumb: Gamedev,
     images: [Gamedev],
-    link: 'https://github.com/mp308/Project_IOT_HotelsTest.git',
+    link: 'https://drive.google.com/file/d/1-v9SEPco_RR9vUvMKkKCtJZ3iZ3BvTFx/view?usp=drive_link',
   },
 
 
@@ -201,24 +201,24 @@ export class EV_GIT extends Component {
                 {/* text */}
                 <div className="flex-1">
                   <div className='flex flex-row gap-2'>
-                    <h3 className="text-lg sm:text-2xl font-prompt font-bold tracking-wide text-white group-hover:text-emerald-700 transition bg-emerald-600 text-center inline-block w-fit px-3 mb-3 ">
+                    <h3 className="text-lg sm:text-2xl font-prompt font-bold tracking-wide text-white  transition bg-emerald-600 text-center inline-block w-fit px-3 mb-3 ">
                       {p.Indicate}
                     </h3>
-                    <h3 className="text-lg sm:text-3xl font-bebas tracking-wide text-white group-hover:text-emerald-700 transition">
+                    <h3 className="text-lg sm:text-3xl font-bebas tracking-wide text-emerald-600 transition">
                       {p.category}
                     </h3>
                   </div>
-                  <h3 className="text-lg sm:text-2xl font-bebas tracking-wide text-white group-hover:text-emerald-700 transition">
+                  <h3 className="text-lg sm:text-2xl font-bebas tracking-wide text-white transition">
                     {p.title}
                   </h3>
-                  <p className="mt-1 text-xs sm:text-sm text-white group-hover:text-emerald-400 font-kumbh line-clamp-3">
+                  <p className="mt-1 text-xs sm:text-sm text-white  font-kumbh line-clamp-3">
                     {p.desc}
                   </p>
 
                   {/* ---- ปุ่มเปิด Modal ---- */}
                   <button
                     onClick={() => this.setState({ selectedProject: p })}
-                    className="mt-2 text-xs sm:text-sm font-medium text-white hover:text-emerald-100 underline underline-offset-2"
+                    className="mt-2 text-xs sm:text-sm font-medium text-emerald-200 underline underline-offset-2"
                   >
                     View&nbsp;Detail
                   </button>
@@ -230,6 +230,8 @@ export class EV_GIT extends Component {
 
         </div>
 
+        {/* ---------- Modal ---------- */}
+
         {selectedProject && (
           <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm"
@@ -238,7 +240,7 @@ export class EV_GIT extends Component {
             {/* กล่องเนื้อหา – stopPropagation เพื่อไม่ให้ปิดตอนคลิกข้างใน */}
             <div
               className="relative w-[90%] max-w-3xl max-h-[90vh] overflow-y-auto
-                         bg-white rounded-xl shadow-xl p-6 sm:p-10"
+                         bg-white rounded-lg shadow-xl p-6 sm:p-10"
               onClick={e => e.stopPropagation()}
             >
               {/* ปุ่ม X ปิด */}
@@ -249,18 +251,13 @@ export class EV_GIT extends Component {
                 ✕
               </button>
 
-              {/* ---------- เนื้อหาโปรเจ็กต์ ---------- */}
-              <h2 className="text-2xl sm:text-3xl font-bebas mb-4 text-emerald-800">
-                {selectedProject.title}
-              </h2>
-
               {/* รูปขนาดใหญ่ถ้ามี */}
               <div
                 className="grid gap-4 mb-6
                 grid-cols-3
-             sm:grid-cols-3           /* 2 คอลัมน์บนจอ ≥640px */
-             lg:grid-cols-3           /* 3 คอลัมน์บนจอ ≥1024px */
-             max-h-[60vh] "  /* กำหนดความสูง + สกอลล์ */
+             sm:grid-cols-3           
+             lg:grid-cols-3          
+             max-h-[60vh] "
               >
                 {selectedProject.images.map((img, idx) => (
                   <img
@@ -273,8 +270,20 @@ export class EV_GIT extends Component {
                   />
                 ))}
               </div>
+              <div className='flex flex-row gap-2'>
+                    <h3 className="text-lg sm:text-2xl font-prompt font-bold tracking-wide text-white  transition bg-emerald-600 text-center inline-block w-fit px-3 mb-3 ">
+                      {selectedProject.Indicate}
+                    </h3>
+                    <h3 className="text-lg sm:text-3xl font-bebas tracking-wide text-emerald-600 transition">
+                      {selectedProject.category}
+                    </h3>
+                  </div>
+               {/* ---------- เนื้อหาโปรเจ็กต์ ---------- */}
+              <h2 className="text-2xl sm:text-3xl font-bebas mb-4 text-black">
+                {selectedProject.title}
+              </h2>
 
-              <p className="text-sm sm:text-base text-gray-700 font-mitr whitespace-pre-line">
+              <p className="text-xs sm:text-base text-black font-kumbh whitespace-pre-line">
                 {selectedProject.modaldesc}
               </p>
 

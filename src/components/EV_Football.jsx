@@ -18,11 +18,9 @@ export class EV_Football extends Component {
       <>
         <div className="p-4 lg:px-20 text-center">
           <h1 className="text-7xl mt-9 mb-5 text-white font-bebas">- Bcc Sports ChongCo League -</h1>
-          <p className="text-2xl text-white font-kumbh font-thin mb-5">
-             This is a football league that I have been involved in for 3 years. I have been responsible for
-            creating posters and banners for the event. The league is held every year and attracts a large
-            number of participants. I have learned a lot from this experience, including how to work with
-            different teams and how to manage my time effectively.
+          
+          <p className="text-xl text-white font-kumbh font-thin mb-5">
+             This is a football league It’s an intra-year friendly football tournament, and I’m in charge of designing the banners and promotional graphics for the team called “66
             </p>
             <div className='p-9'>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-5">

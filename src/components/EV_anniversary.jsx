@@ -26,11 +26,8 @@ export class EV_anniversary extends Component {
       <>
         <div className="p-4 lg:p-20 text-center">
           <h1 className="text-7xl mt-9 mb-5 text-white font-bebas">- Bcc 168 Anniversary th -</h1>
-          <p className="text-2xl text-white font-kumbh font-thin mb-5">
-            This is a football league that I have been involved in for 3 years. I have been responsible for
-            creating posters and banners for the event. The league is held every year and attracts a large
-            number of participants. I have learned a lot from this experience, including how to work with
-            different teams and how to manage my time effectively.
+          <p className="text-xl text-white font-kumbh font-thin mb-5">
+            For Bangkok Christian College’s 168th Birthday Celebration, I served on the publicity team, creating promotional media for the event. My role covered designing posters, social-media graphics, on-site banners, and digital teasers that captured the spirit of the anniversary and engaged students, alumni, and guests in the lead-up to the festivities.
           </p>
           <div className='p-8'>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">

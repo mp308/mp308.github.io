@@ -50,9 +50,9 @@ export default function Myartwork() {
             ))}
           </h1>
         </div>
-        <EV_Football />
         <EV_YearBook />
         <EV_anniversary />
+        <EV_Football />
       </div>
       <Footer />
     </>
