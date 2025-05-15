@@ -133,6 +133,10 @@
   opacity: 0;
 }
 
+@keyframes rotate-conic {
+  to { transform: rotate(360deg); }
+}
+
 /* h1#name-text-hero:hover .hover-bg {
   opacity: 1;
   transform: scale(1.05);

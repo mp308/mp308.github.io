@@ -20,6 +20,7 @@ export default {
       animation: {
         gradient: "gradient 6s linear infinite",
         loopscroll: "loopscroll 50s linear infinite",
+        'rotate-conic': 'rotate-conic 30s linear infinite',
       },
       keyframes: {
         gradient: {
@@ -30,6 +31,18 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
         },
+        'rotate-conic': {
+          to: { transform: 'rotate(360deg)' },
+        },
+      },
+      colors: {
+        'pp-purple': '#861a54',
+        'pp-blue': '#054f7d',
+        'pp-ltblue': '#00a7cf',
+        'sp-yellow': '#efe348',
+      },
+        backgroundImage: {
+        'custom-radial': 'radial-gradient(circle at center,rgb(36, 170, 146) 10%,rgb(46, 134, 118) 63%, #000000 86%)',
       },
     },
   },

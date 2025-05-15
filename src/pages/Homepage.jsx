@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef,useEffect } from 'react';
+import React, { useLayoutEffect, useRef, useEffect } from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
@@ -15,7 +15,7 @@ import Content from '../components/Myworkcontent';
 import FooterBanner from '../components/FooterBanner';
 import WelcomBanner from '../components/WelcomBanner';
 import Certi from '../components/Certi';
-import  Bannerproject  from '../components/Bannerproject';
+import Bannerproject from '../components/Bannerproject';
 import CoBannerskill from '../components/Cobannerskill';
 
 
@@ -45,7 +45,7 @@ const Homepage = () => {
         opacity: 0,
         y: "+=30",
         stagger: 0.5,
-      }).to(["#title-1", "#title-2", "#title-3" , "#title-4"], {
+      }).to(["#title-1", "#title-2", "#title-3", "#title-4"], {
         opacity: 0,
         y: "-=30",
         delay: 0.5,
@@ -66,7 +66,7 @@ const Homepage = () => {
     <>
       <div className='relative' ref={comp}>
         <div id='intro-slider'
-          className='h-screen p-10 bg-gray-50 absolute top-0 left-0 font-bebas z-10 w-full flex flex-col gap-10 tracking-tight '>
+          className='h-screen p-10 bg-gray-50 absolute top-0 left-0 font-bebas z-20 w-full flex flex-col gap-10 tracking-tight '>
           <h1 id='title-1'
             className='text-4xl md:text-6xl lg:text-9xl '>SANPITCH</h1>
           <h1 id='title-2'
@@ -77,15 +77,48 @@ const Homepage = () => {
             className='text-4xl md:text-6xl lg:text-9xl '>Graphics & Fullstack Developer</h1>
         </div>
       </div>
-      <div id='welcome ' className="bg-[#1b1b1b] text-white" >
-        <Header />
-        <WelcomBanner/>
-        <Contact />
-        <Bannerproject />
-        <CoBannerskill />
-        <FooterBanner />
-        <Footer />
-      
+
+      <div id='welcome' className="relative overflow-hidden bg-black text-white min-h-screen" >
+        <div className='pointer-events-none z-0'>
+          <div
+            className="
+          items-center justify-center
+            absolute 
+            w-[100%] aspect-square
+            rounded-full
+            filter blur-[70px]
+            sm:blur-[200px]
+            md:blur-[300px]
+            bg-[conic-gradient(at_top_left,rgba(255,80,0,0.8),rgba(0,167,207,0.6),rgba(254,228,72,0.7),rgba(134,26,84,0.8))]
+            animate-rotate-conic  
+          "/>
+        </div>
+        <div className='pointer-events-none z-0'>
+          <div
+            className="
+          items-center justify-center
+            absolute 
+            bottom-[0]
+            w-[100%] aspect-square
+            rounded-full
+            filter blur-[70px]
+            sm:blur-[200px]
+            md:blur-[300px]
+            bg-[conic-gradient(at_top_left,rgba(255,80,0,0.8),rgba(0,167,207,0.6),rgba(254,228,72,0.7),rgba(134,26,84,0.8))]
+            animate-rotate-conic             
+          "/>
+        </div>
+
+        <div className="relative z-10 bg-black bg-opacity-40">
+          <Header />
+          <WelcomBanner />
+          <Contact />
+          <Bannerproject />
+          <CoBannerskill />
+          <FooterBanner />
+          <Footer />
+
+        </div>
       </div>
     </>
   );

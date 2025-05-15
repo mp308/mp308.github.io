@@ -12,6 +12,7 @@ export class EV_YearBook extends Component {
     return (
       <>
         <div className="p-4 lg:p-20 text-center">
+          
           <h1 className="text-7xl mt-9 mb-5 text-white font-bebas">- Years Book Bcc 168 -</h1>
           <p className="text-xl text-white font-kumbh font-thin mb-5">
             When Bangkok Christian College entered its 168th year, the school’s administrators and students envisioned producing a commemorative Year Book that would weave together the institution’s rich history, pivotal moments, and enduring memories shared by “Christian” students across every generation. More than a simple keepsake, the book was intended to serve as a testament to—and storyteller of—the distinctive identity and fraternal values that have bound the Christian brotherhood for more than a century and a half.

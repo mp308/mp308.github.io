@@ -12,6 +12,7 @@ class Mywork extends Component {
       <>
         <Header />
         <div className='bg-[#1a1a1a]'>
+          <div className="bg-[#1a1a1a]" style={{padding: 50}}></div>
         <EV_GIT/>
         </div>
         <Footer />

@@ -89,8 +89,8 @@ const Contact = () => {
               /></span> </p>
 
 
-              <h1 className='pt-8 text-5xl font-bebas'>Follow Us</h1>
-              <div className='pt-8  pb-12 flex flex-row gap-4 ' style={{ fontSize: '50px' }}>
+              <h1 className='pt-8 text-5xl font-bebas z-10'>Follow Us</h1>
+              <div className='pt-8  pb-12 flex flex-row gap-4 z-10' style={{ fontSize: '50px' }}>
                 <a href="https://github.com/mp308" className=' hover:text-gray-600 transition delay-150 duration-300 ease-in-out'><FaGithub /></a>
                 <a href="https://www.instagram.com/mooyoungbongkancha/?hl=en" className='hover:text-gray-600 transition delay-150 duration-300 ease-in-out'><FaSquareInstagram /></a>
                 <a href="https://www.facebook.com/fifa.rock.90/" className='hover:text-gray-600 transition delay-150 duration-300 ease-in-out'><FaFacebook /></a>

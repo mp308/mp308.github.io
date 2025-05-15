@@ -30,6 +30,7 @@ export default function Myartwork() {
     <>
       <Header />
       <div className="bg-[#1a1a1a]">
+        <div className="bg-[#1a1a1a]" style={{padding: 50}}></div>
         <div className='relative flex justify-center ' style={{ paddingTop: '15vh', paddingBottom: '15vh' }}>
           <img
             src={Banner}
@@ -50,9 +51,9 @@ export default function Myartwork() {
             ))}
           </h1>
         </div>
+
         <EV_YearBook />
         <EV_anniversary />
-        <EV_Football />
       </div>
       <Footer />
     </>
