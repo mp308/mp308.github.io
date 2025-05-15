@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 import { motion, useAnimation } from 'framer-motion'
 //ส่วน obj/pic
-import { FaGithub, FaLine, FaYoutube, FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa"; // icon
+import { FaGithub, FaLine, FaYoutube, FaReact, FaHtml5, FaCss3Alt, FaAngular , FaBootstrap} from "react-icons/fa"; // icon
 import { FaSquareInstagram, FaFacebook, } from "react-icons/fa6"; // icon
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiFlutterFill, RiTailwindCssFill } from "react-icons/ri";
@@ -150,7 +150,7 @@ const Contact = () => {
                   <FaReact className="text-2xl lg:text-4xl text-green-500" />
                 </div>
                 <div className="absolute animate-rotate-circle" style={{ animationDelay: '3s' }}>
-                  <RiFlutterFill className="text-2xl lg:text-4xl text-red-500" />
+                  <FaAngular  className="text-2xl lg:text-4xl text-red-500" />
                 </div>
                 <div className="absolute animate-rotate-circle" style={{ animationDelay: '4s' }}>
                   <IoLogoJavascript className="text-2xl lg:text-4xl text-yellow-500" />
@@ -165,7 +165,7 @@ const Contact = () => {
                   <RiTailwindCssFill className="text-2xl lg:text-4xl text-red-500" />
                 </div>
                 <div className="absolute animate-rotate-circle" style={{ animationDelay: '8s' }}>
-                  <VscVscode className=" text-2xl lg:text-4xl text-yellow-500" />
+                  <FaBootstrap className=" text-2xl lg:text-4xl text-yellow-500" />
                 </div>
               </div>
               <div className="rounded-full w-48 h-48 lg:w-96 lg:h-96 bg-white absolute z-0">                
