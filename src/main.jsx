@@ -2,10 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createHashRouter,RouterProvider } from "react-router-dom";
 import Homepage from './pages/Homepage';
 import ErrorPage from './pages/Errorpage';
 import About from './backup/Aboutpage';
@@ -20,7 +17,7 @@ import Certifi from './pages/Certifi';
 
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Homepage/>,
